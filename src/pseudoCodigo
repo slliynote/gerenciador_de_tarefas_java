@@ -1,0 +1,16 @@
+class gerenciador de tarefas{
+
+ //menu inicial , metodo menuInicial String (String tarefas, String tarefaP, String lista, String ASDUT, String removeT, String sair ){
+  retorna tarefas + " \n "
+  }
+
+  metodo executa void(){
+  System.out.print(tarefaSimples("joger", "trabalhar"))
+  }
+
+  public void main (){
+  gerenciadorDeTarefas.executa();
+
+  }
+
+}

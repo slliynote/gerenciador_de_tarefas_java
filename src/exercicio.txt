@@ -1,0 +1,87 @@
+Pronto arrumei aqui , tem tudo q a gente viu .
+
+Desafio de Programação Avançado: “Gerenciador de Tarefas com POO”
+
+Objetivo
+
+Criar um gerenciador de tarefas orientado a objetos em Java, com ênfase em conceitos de POO como herança, polimorfismo e encapsulamento, além de gerenciar o projeto no GitHub.
+
+Parte 1: Planejamento Algorítmico
+
+ 1. Estruture a lógica do programa utilizando pseudocódigo ou fluxograma, considerando:
+ • Adição de tarefas simples e tarefas com prazo.
+ • Atualização de status das tarefas.
+ • Listagem e remoção de tarefas.
+ 2. Opcionalmente, descreva como a orientação a objetos pode ser aplicada para organizar o código, com base em classes e relacionamentos.
+
+Parte 2: Implementação em Java
+
+Implemente o gerenciador de tarefas com as seguintes especificações:
+
+2.1 Estrutura de Classes
+
+ 1. Crie uma classe base Tarefa com:
+ • Atributos:
+ • String descricao;
+ • boolean concluida;
+ • Métodos:
+ • Construtor para inicializar os atributos.
+ • void atualizarStatus(boolean concluida) para alterar o status.
+ • void exibirDetalhes() para mostrar as informações da tarefa.
+ 2. Adicione uma classe derivada TarefaComPrazo que herda de Tarefa:
+ • Atributos adicionais:
+ • LocalDate prazo;
+ • Sobrescreva o método exibirDetalhes() para incluir o prazo na exibição.
+
+2.2 Menu Interativo
+
+Implemente um menu no console com as seguintes opções:
+ • 1: Adicionar tarefa simples.
+ • 2: Adicionar tarefa com prazo.
+ • 3: Listar todas as tarefas.
+ • 4: Alterar status de uma tarefa.
+ • 5: Remover tarefa.
+ • 6: Sair.
+
+Use uma lista (List<Tarefa>) para armazenar as tarefas.
+
+Parte 3: Recomendações Avançadas
+
+Você pode melhorar o programa aplicando conceitos mais avançados de POO:
+ 1. Polimorfismo:
+ • Use uma lista do tipo List<Tarefa> para permitir o armazenamento de objetos tanto da classe Tarefa quanto de TarefaComPrazo.
+ 2. Interface (opcional):
+ • Defina uma interface ITarefa para declarar métodos como exibirDetalhes() e atualizarStatus().
+ 3. Classe Abstrata (opcional):
+ • Transforme Tarefa em uma classe abstrata, forçando a implementação de métodos como exibirDetalhes() em suas subclasses.
+
+Essas práticas não são obrigatórias, mas recomendadas para desenvolver habilidades mais avançadas em POO.
+
+Parte 4: Gerenciamento no GitHub
+
+ 1. Crie um repositório chamado GerenciadorDeTarefasPOO.
+ 2. Estruture o projeto:
+ • Um arquivo README.md explicando o objetivo, as funcionalidades e como rodar o programa.
+ • Organize o código dentro de uma pasta src.
+ 3. Controle de versões:
+ • Faça commits frequentes e bem descritos (ex.: feat: adiciona classe base Tarefa).
+ • Use branches para cada funcionalidade e revise antes de realizar o merge para a branch principal.
+
+Critérios de Avaliação
+
+ 1. Uso de POO:
+ • Organização do código em classes.
+ • Implementação de herança e, opcionalmente, polimorfismo.
+ 2. Funcionalidade:
+ • Menu funcional e execução correta das operações.
+ 3. Estrutura e Documentação:
+ • Código limpo e bem comentado.
+ • Repositório no GitHub organizado.
+
+Extras (Opcional)
+
+ • Adicione cores e formatação ao console para destacar mensagens.
+ • Permita salvar e carregar tarefas em um arquivo.
+ • Implemente testes unitários para validar o comportamento do programa.
+
+Esse desafio equilibra conceitos de POO e práticas de desenvolvimento colaborativo, incentivando soluções criativas e organizadas.
