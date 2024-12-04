@@ -34,22 +34,11 @@ public class tarefaRafael {
                 String num2 = nome1.next();
                 lista.add(num2);
 
-                for (int i = 0; i < status.size(); i++) {
-                    System.out.print("adicione um status: ");
-                    Scanner nome7 = new Scanner(System.in);
-                    String num6 = nome7.next();
-                    teste.add(i + 1);
-                    status.add(num6);
-
-                }
-
-                if(status.isEmpty()){
-                    System.out.print(" adicione um status: ");
-                    Scanner nome10 = new Scanner(System.in);
-                    String num77 = nome10.next();
-                    teste.add(1);
-                    status.add(num77);
-                }
+                System.out.print("adicione um status: ");
+                Scanner nome7 = new Scanner(System.in);
+                String num6 = nome7.next();
+                status.add(num6);
+                listaN.add("");
 
             } else if (num == 2) {
                 System.out.print("escreva uma tarefa: ");
@@ -67,23 +56,37 @@ public class tarefaRafael {
 
 
             } else if (num == 3) {
-                System.out.println(teste + "" + "" + listaN + "" + lista + "" + status);
 
+                for(int i = 0; i < status.size(); i++) {
+                    System.out.println(i + 1 +": " + lista.get(i) + " " + listaN.get(i) + " --" + status.get(i));
+                }
             } else if (num == 4) {
-                System.out.println(lista + "\n" + "" + listaN + "\n" + status + "");
-                System.out.print("digite o status que vocẽ quer alterar: ");
+                System.out.print("indice do status: ");
                 Scanner nome7 = new Scanner(System.in);
-                String num6 = nome7.next();
+                double num6 = nome7.nextDouble();
                 System.out.print("digite o novo status: ");
                 Scanner nome0 = new Scanner(System.in);
                 String num8 = nome0.next();
-                for (int i = 0; i < status.size(); i++) {
-                   if(status.get(i).equals(num6)){
-                       status.set(i,num8);
+                for (double i = 0; i < status.size(); i++) {
+                   if(i == num6 - 1 ){
+                       status.set((int)i,num8);
                    };
                 }
             }
+            else if(num == 5){
+                System.out.print("indice da tarefa a ser excluida: ");
+                Scanner nome7 = new Scanner(System.in);
+                double num6 = nome7.nextDouble();
 
+                for (double i = 0; i < status.size(); i++) {
+                    if(i == num6 - 1 ){
+                        lista.remove((int)num6 -1);
+                        status.remove((int)num6 -1);
+                        listaN.remove((int)num6 -1);
+                    };
+                }
+
+            }
             else{
                     System.out.println("nenhuma das opções foi selecionada!");
                 }
