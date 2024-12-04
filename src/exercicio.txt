@@ -35,7 +35,7 @@ Implemente o gerenciador de tarefas com as seguintes especificações:
 
 2.2 Menu Interativo
 
-Implemente um menu no console com as seguintes opções:
+Implemente um main.main.menu no console com as seguintes opções:
  • 1: Adicionar tarefa simples.
  • 2: Adicionar tarefa com prazo.
  • 3: Listar todas as tarefas.
@@ -43,13 +43,13 @@ Implemente um menu no console com as seguintes opções:
  • 5: Remover tarefa.
  • 6: Sair.
 
-Use uma lista (List<Tarefa>) para armazenar as tarefas.
+Use uma main.main.lista (List<Tarefa>) para armazenar as tarefas.
 
 Parte 3: Recomendações Avançadas
 
 Você pode melhorar o programa aplicando conceitos mais avançados de POO:
  1. Polimorfismo:
- • Use uma lista do tipo List<Tarefa> para permitir o armazenamento de objetos tanto da classe Tarefa quanto de TarefaComPrazo.
+ • Use uma main.main.lista do tipo List<Tarefa> para permitir o armazenamento de objetos tanto da classe Tarefa quanto de TarefaComPrazo.
  2. Interface (opcional):
  • Defina uma interface ITarefa para declarar métodos como exibirDetalhes() e atualizarStatus().
  3. Classe Abstrata (opcional):

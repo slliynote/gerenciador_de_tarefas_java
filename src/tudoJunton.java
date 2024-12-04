@@ -1,9 +1,8 @@
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Scanner;
-import java.util.stream.IntStream;
 
 public class tarefaRafael {
+
 
 
     public static void dalva() {
