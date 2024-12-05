@@ -11,7 +11,6 @@ public class tarefaRafael {
         ArrayList<String> listaN = new ArrayList<>();
         ArrayList<String> Menu = new ArrayList<>();
         ArrayList<String> status = new ArrayList<>();
-        ArrayList<Integer> teste = new ArrayList<>();
 
         Menu.add("1:tarefa simples \n" + "2:tarefa com prazo \n" + "3:listar tarefas \n" +
                 "4:mudar status da tarefa \n" + "5:remover tarefa\n" + "6:sair"
