@@ -1,37 +1,36 @@
 package main;
 
 import main.menu;
+import tarefas.tarefa_simples;
 
 import java.util.Scanner;
 
 public class main {
 
-   public static void executar_programa(){
+   public static void executar_programa() {
 
-       int num;
+
+       int indiceEscolhido;
 
        do{
-           // Mostra o menu
+          menu.mostraMenu();
+          indiceEscolhido = menu.obter_valor();
 
-           System.out.println(menu.mostraMenu());
-           System.out.print("escolha uma ação: ");
-           Scanner nome = new Scanner(System.in);
-           num = nome.nextInt();
+           switch(indiceEscolhido){
 
-           switch (num){
+               case 1 :
+                  String tarefa = tarefa_simples.obter_tarefa();
 
+                  String status = tarefa_simples.obter_status();
 
            }
+          
 
 
-
-       }while (num != 6 );
-
+       }while(indiceEscolhido != 6);
 
 
-
-   };
-
+   }
 
     public static void main(String[] args) {
 
