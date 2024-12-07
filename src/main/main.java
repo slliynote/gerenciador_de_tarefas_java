@@ -2,6 +2,7 @@ package main;
 
 import main.menu;
 import tarefas.tarefa_simples;
+import tarefas.tarefa_composta;
 
 import java.util.Scanner;
 
@@ -12,17 +13,30 @@ public class main {
 
        int indiceEscolhido;
 
+
+
        do{
+
           menu.mostraMenu();
           indiceEscolhido = menu.obter_valor();
 
            switch(indiceEscolhido){
 
                case 1 :
-                  String tarefa = tarefa_simples.obter_tarefa();
+                 tarefa_simples.executa_o_tarefa_simples();
+               break;
 
-                  String status = tarefa_simples.obter_status();
+                case 2 :
+                  tarefa_composta.executa_o_tarefa_composta();
+                  break;
 
+               case 3 :
+                   tarefa_composta.listar();
+                   break;
+
+               case 4 :
+
+                   break;
            }
           
 

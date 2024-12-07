@@ -3,6 +3,11 @@ package tarefas;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+//importação dos arrays dos arrays tarefa, tarefaComposta e status.
+import static tarefas.tarefa_composta.Status;
+import static tarefas.tarefa_composta.Tarefa;
+import static tarefas.tarefa_composta.tarefaC;
+
 public class tarefa_simples {
 
     //instancia do scanner
@@ -10,16 +15,14 @@ public class tarefa_simples {
 
      //metodo principal
      public static void executa_o_tarefa_simples(){
-         ArrayList<String> Tarefa = new ArrayList<>();
-         ArrayList<String> listaN = new ArrayList<>();
-         ArrayList<String> Status = new ArrayList<>();
+
 
          String tarefa = obter_tarefa();
          Tarefa.add(tarefa);
 
          String status = obter_status();
          Status.add(status);
-         listaN.add("");
+         tarefaC.add("");
 
      }
       //metodo obter_tarefa
