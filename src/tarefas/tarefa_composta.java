@@ -3,8 +3,14 @@ package tarefas;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class tarefa_composta {
+// importa o obter status do tarefa simples
+import static tarefas.tarefa_simples.obter_status;
 
+// importa o obter tarefa do tarefa simples
+import static tarefas.tarefa_simples.obter_tarefa;
+
+//metodo principal
+public class tarefa_composta {
 
         //instancia do scanner
         private static Scanner scanner = new Scanner(System.in);
@@ -28,16 +34,7 @@ public class tarefa_composta {
 
         }
 
-        //metodo obter_tarefa
-        public static String obter_tarefa(){
-            System.out.print("escreva uma tarefa: ");
-            return scanner.nextLine();
-        }
-        // metodo obter_status
-        public static String obter_status(){
-            System.out.print("adicione um status: ");
-            return scanner.nextLine();
-        }
+
         // metodo obter_tarefa_composta
         public static String obter_tarefa_composta(){
             System.out.print("escreva uma data: ");
